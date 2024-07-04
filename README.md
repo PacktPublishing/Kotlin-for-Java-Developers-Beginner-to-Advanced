@@ -9,7 +9,7 @@ The author of this book is - [Jose Dimas Lujan Castillo](https://github.com/jose
 Software required (With version):
 - Java  JDK 8 or higher
 - IntelliJ IDEA CE
-- Kotlin 1.x
+- Kotlin 1.x - 2.x
 
 ## Chapters
 
