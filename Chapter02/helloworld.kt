@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     //Use Java code:
     /*
     fun main(args: Array<String>){
-        println("Hello world Kotlin!")
+        println("Hello World Kotlin!")
         val javaGreeting = MyJFile()
         javaGreeting.hiJava()
     }
@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     //Passing variables
     /*
     fun main(args: Array<String>){
-        println("Hello world Kotlin!")
+        println("Hello World Kotlin!")
         val javaGreeting = MyJFile()
         javaGreeting.hiJava("jose")
     }

@@ -16,7 +16,7 @@ public class MyJFile {
     /*
     fun main(args: Array<String>){
 
-        println("Hello world Kotlin!")
+        println("Hello World Kotlin!")
         val javaGreeting = MyJFile()
         javaGreeting.name = "jose"
         javaGreeting.hiJava()
