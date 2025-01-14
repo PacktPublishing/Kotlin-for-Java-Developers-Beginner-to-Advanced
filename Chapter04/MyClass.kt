@@ -15,6 +15,13 @@ class MyClass {
             println("init block")
         }
      */
+
+    //Override printInfo
+    /*
+    override fun printInfo(){
+        println("Printing info from the companion object")
+    }
+     */
     fun printString(){
         println("Just a new String")
     }
