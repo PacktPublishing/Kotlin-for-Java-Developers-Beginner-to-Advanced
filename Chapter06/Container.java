@@ -14,3 +14,23 @@ public class Container {
     }
 
 }
+
+/* Container Generic
+public class Container<T> {
+        private T content;
+
+        public Container(T content) {
+            this.content = content;
+        }
+
+        public T getContent(){
+            return  content;
+        }
+
+        public void setContent(T content){
+            this.content = content;
+        }
+
+}
+
+ */

@@ -5,4 +5,3 @@ public class Main {
         System.out.println(myContainer.getContent());
     }
 }
- 
