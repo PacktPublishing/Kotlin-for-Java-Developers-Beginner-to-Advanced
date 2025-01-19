@@ -25,3 +25,20 @@ val numbers = listOf(33, 3, 38)
 numbers.processEach { println("Number: $it") }
 val names = listOf("Noemi", "Viena", "Jose")
 names.processEach { println("Name: $it") } */
+
+
+
+/* When not to use generics?
+
+// BAD (overcomplicated):
+class UserRepository<T : User> {
+fun save(item: T)
+fun find(id: Int): T
+}
+
+// BETTER (simpler and clearer):
+class UserRepository {
+fun save(user: User)
+fun find(id: Int): User
+}
+ */
