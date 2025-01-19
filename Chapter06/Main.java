@@ -4,4 +4,14 @@ public class Main {
         Container myContainer = new Container("Jose");
         System.out.println(myContainer.getContent());
     }
+
+    /*Use Generic Container
+    public static void main(String[] args) {
+        Container myAContainer = new Container("jose");
+        Container myBContainter = new Container(999);
+        System.out.println(myAContainer.getContent());
+        System.out.println(myBContainter.getContent());
+    }
+
+     */
 }
