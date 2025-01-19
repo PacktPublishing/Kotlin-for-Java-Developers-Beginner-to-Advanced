@@ -42,3 +42,18 @@ fun save(user: User)
 fun find(id: Int): User
 }
  */
+
+/*
+// If you only need to print items:
+// BAD (unnecessarily generic):
+fun <T> printItem(item: T) {
+    println(item.toString())
+}
+
+
+
+// BETTER (simpler):
+fun printItem(item: Any) {
+    println(item.toString())
+} 
+ */
