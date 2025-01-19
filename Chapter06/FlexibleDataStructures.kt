@@ -13,3 +13,15 @@ class Box<T>(val value: T) {
 val stringBox = Box("Hello")
 val numberBox = Box(100)
 val personBox = Box(Person("Jose Lujan"))
+
+/*
+// Generic function to process lists
+fun <T> List<T>.processEach(action: (T) -> Unit) {
+    forEach { item -> action(item) }
+}
+
+// Use with different types:
+val numbers = listOf(33, 3, 38)
+numbers.processEach { println("Number: $it") }
+val names = listOf("Noemi", "Viena", "Jose")
+names.processEach { println("Name: $it") } */
