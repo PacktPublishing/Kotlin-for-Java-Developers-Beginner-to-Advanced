@@ -1,0 +1,1 @@
+class Container<T>(var content: T) 
