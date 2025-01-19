@@ -23,3 +23,12 @@ class ShoppingCart {
     }
 
 }
+//Main
+fun main() {
+    val cart = ShoppingCart()
+    cart.addItem(Product("Laptop", 999.99))
+    cart.addItem(DiscountedProduct("Phone", 599.99, 0.1))
+    cart.addItem("This shouldn't be here")// we can add any type
+    println(cart.calculateTotal()) // Posible error
+
+}
