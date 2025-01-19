@@ -72,7 +72,7 @@ fun main() {
 /*
 Main for generic cart only accepts types that implement PricedItem
 fun main() {
-val cart = ShoppingCart<PricedItem>() 
+val cart = ShoppingCart<PricedItem>()
 cart.addItem(Product("Laptop", 999.99))
 cart.addItem(DiscountedProduct("Phone", 599.99, 0.1))
 // cart.addItem("This won't compile") // error: not a `PricedItem`
