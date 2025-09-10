@@ -11,7 +11,7 @@ enum class Weekday(val isWorkday: Boolean) {
     fun isWeekend() = !isWorkday
 
     companion object {
-        fun getWorkdays() = ​entries​.filter { it.isWorkday }
+        fun getWorkdays() = values ().​​filter { it.isWorkday } 
     }
 }
 
