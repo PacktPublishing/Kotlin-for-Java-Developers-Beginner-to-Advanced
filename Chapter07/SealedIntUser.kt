@@ -13,7 +13,7 @@ object Admin : UserRole {
 }
 
 object Editor : UserRole {
-    funeditBook(title: String, newDetails: String) {
+    fun editBook(title: String, newDetails: String) {
         println("Book '$title' updated with new details: $newDetails")
     }
 }
