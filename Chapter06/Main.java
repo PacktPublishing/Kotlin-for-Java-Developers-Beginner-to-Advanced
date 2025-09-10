@@ -7,8 +7,8 @@ public class Main {
 
     /*Use Generic Container
     public static void main(String[] args) {
-        Container myAContainer = new Container("jose");
-        Container myBContainter = new Container(999);
+        Container<String> myAContainer = new Container<>("jose");
+        Container<Integer> myBContainter = new Container<>(999);
         System.out.println(myAContainer.getContent());
         System.out.println(myBContainter.getContent());
     }
