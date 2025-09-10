@@ -9,7 +9,7 @@ sealed class Book {
         override val author: String,
         override val year: Int,
         val genre: String
-    ) : Book() }
+    ) : Book()
 
 class NonFiction(
     override val title: String,
