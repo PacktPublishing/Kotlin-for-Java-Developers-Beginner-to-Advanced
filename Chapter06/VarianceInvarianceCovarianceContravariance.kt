@@ -44,9 +44,9 @@ class Container<in T> {
 
 fun main(){
     val figureContainer: Container<Figure> = Container()
-    val triangleConsumer: Container<Triangle> = figureContainer
+    val triangleContainer: Container<Triangle> = figureContainer
 
-    triangleConsumer.setContent(Triangle())
+    triangleContainer.setContent(Triangle())
     figureContainer.setContent(Square())
 
 }
