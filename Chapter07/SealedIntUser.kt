@@ -18,7 +18,7 @@ object Editor : UserRole {
     }
 }
 
-objectReader : UserRole {
+object Reader : UserRole {
     fun readBook(title: String) {
         println("Reading book: $title")
     }
