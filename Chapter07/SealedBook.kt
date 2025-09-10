@@ -63,7 +63,7 @@ fun main() {
     val books = listOf(
     Book.Fiction("Yo, robot", "Isaac Asimov", 1950, "Fantasy literature"),
     Book.NonFiction("The Theory of Everything: The Origin and Fate of the Universe", "Stephen Hawking", 2002, "Physics"),
-    Book.TextBook("Basic Mathematics", "Jose Lujan", 2010, "Sciense", 10),
+    Book.TextBook("Basic Mathematics", "Jose Lujan", 2010, "Science", 10),
     Book.ComicBook("Spiderman", "Stan Lee", 1986, "Steve Ditko")
     )
 
