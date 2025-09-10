@@ -1,3 +1,4 @@
+//class Container(var content:String)
 class Container<T>(var content: T)
 
 
