@@ -9,13 +9,13 @@ class MenuBuilder {
     fun build(): List<MenuItem> {
         return items.toList()
     }
-}
 
     fun buildMenu(init: (MenuBuilder) -> Unit): List<MenuItem> {
         val builder = MenuBuilder()
         init(builder)
         return builder.build()
     }
+}
 
 data class MenuItem(val name: String, val action: () -> Unit)
 
