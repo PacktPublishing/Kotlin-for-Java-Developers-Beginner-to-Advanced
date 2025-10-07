@@ -6,10 +6,10 @@ import kotlinx.coroutines.channels.produce
 fun CoroutineScope. producePackets(): ReceiveChannel<String> = produce {
 
     val packages = listOf("Packet 1", "Packet 2", "Packet 3", "Packet 4", "Packet 5")
-    for (package in packages) {
+    for (pack in packages) {
         try {
-            println("Generating: $package")
-            send(package)
+            println("Generating: $pack")
+            send(pack)
             delay(1000)
         } catch (e: Exception) {
             println("Error generating packet: ${e.message}")
@@ -44,11 +44,11 @@ fun CoroutineScope.processPackets(input: ReceiveChannel<String>): ReceiveChannel
 
 fun CoroutineScope.packagingResults(input: ReceiveChannel<String>): ReceiveChannel<String> = produce {
 
-    for (package in input) {
+    for (pack in input) {
         try {
-            println("Packaging: $package")
+            println("Packaging: $pack")
             delay(1000)
-            send("$package packed and ready for shipping")
+            send("$pack packed and ready for shipping")
         } catch (e: Exception) {
             println("Error packaging package: ${e.message}")
             throw e
@@ -70,9 +70,9 @@ fun main() = runBlocking {
     val scope = CoroutineScope(Dispatchers.Default + exceptionHandler)
 
     try {
-        val packageChannel = scope.producePackages()
-        val processedPackages = scope.processPackages(packageChannel)
-        val packaged = scope.packageResults(packagesProcessed)
+        val packageChannel = scope.producePackets()
+        val packagesProcessed = scope.processPackets(packageChannel)
+        val packaged = scope.packagingResults(packagesProcessed)
         // Consume the final result
 
         for (result in packaged) {
