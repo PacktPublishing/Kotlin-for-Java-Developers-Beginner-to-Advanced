@@ -5,9 +5,9 @@ import kotlinx.coroutines.channels.produce
 
 fun CoroutineScope. producePackets(): ReceiveChannel<String> = produce {
     val packets = listOf("Package 1", "Package 2", "Package 3", "Package 4", "Package 5")
-    for (package in packets) {
-        println("Generating: $packet")
-        send(package)
+    for (pack in packets) {
+        println("Generating: $pack")
+        send(pack)
         delay(1000) // Simulates time between packet generation
 
     }
@@ -16,10 +16,10 @@ fun CoroutineScope. producePackets(): ReceiveChannel<String> = produce {
 
 fun CoroutineScope. processPackets(input: ReceiveChannel<String>): ReceiveChannel<String> = produce {
 
-    for (package in input) {
-        println("Processing: $packet")
+    for (pack in input) {
+        println("Processing: $pack")
         delay(1500) // Simulates processing time
-        send("$package processed")
+        send("$pack processed")
 
     }
 
@@ -28,10 +28,10 @@ fun CoroutineScope. processPackets(input: ReceiveChannel<String>): ReceiveChanne
 
 fun CoroutineScope. packResults(input: ReceiveChannel<String>): ReceiveChannel<String> = produce {
 
-    for (package in input) {
-        println("Packing: $package")
+    for (pack in input) {
+        println("Packing: $pack")
         delay(1000) // Simulates packaging time
-        send("$package packed and ready for shipping")
+        send("$pack packed and ready for shipping")
     }
 
 }
@@ -42,10 +42,10 @@ fun main() = runBlocking {
     val packetChannel = producePackets()
 
 // Step 2: Process packets
-    val processedPackets = processPackets(packageChannel)
+    val processedPackets = processPackets(packetChannel)
 
 // Step 3: Package results
-    val packaged = packageResults(processedPackets)
+    val packaged = packResults(processedPackets)
 
 // Consume the final result
 
